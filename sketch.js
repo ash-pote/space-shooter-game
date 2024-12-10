@@ -44,7 +44,7 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(50);
 
   // Update and display stars
   for (let star of stars) {
@@ -83,7 +83,7 @@ function draw() {
     renderSpaceship(player.x, player.y, id === socket.id, player.movingUp);
 
     // Draw player name and score
-    fill("white");
+    fill("red");
     textSize(12);
     text(
       `${player.name}: ${player.score}`,
